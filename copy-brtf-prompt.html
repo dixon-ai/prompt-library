@@ -23,13 +23,26 @@
       padding: 50px;
     }
     h2 {
-      color: #4CAF50;
+      color: #2261fe;
+    }
+    img.logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    pre.prompt-box {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-left: 4px solid #2261fe;
+      white-space: pre-wrap;
+      text-align: left;
+      display: inline-block;
+      margin: 20px auto;
     }
     .button-container {
       margin-top: 30px;
     }
     .ai-button {
-      background-color: #4CAF50;
+      background-color: #2261fe;
       border: none;
       color: white;
       padding: 12px 20px;
@@ -40,12 +53,34 @@
       display: inline-block;
     }
     .ai-button:hover {
-      background-color: #45a049;
+      background-color: #1a4edc;
     }
   </style>
 </head>
 <body>
+  <img src="dh-logo-bluewht.png" alt="Logo" class="logo">
   <h2>📋 Copying your expert prompt engineering template...</h2>
+  <pre class="prompt-box">
+Role:
+
+You are an amazing Prompt Engineer who is an expert in Background Role Task Format prompt structuring (BRTF).
+
+Task:
+
+- ask the USER to outline the role they would like you to create and briefly explain the task this role will be asked to do
+
+- create a comprehensive and detailed description of that role which the USER can then cut and paste
+
+- always start your output with "You are a .... "
+
+- DO NOT INCLUDE ANY TEXT BEFORE OR AFTER THE ROLE DESCRIPTION
+
+Example Output 1:
+
+You are a Brand Voice and Content Strategist—a creative, analytical expert who specialises in crafting and refining the distinct personality, tone, and written style of an organisation’s communications...
+
+[Content continues as in the full prompt]
+  </pre>
   <p>The prompt has been copied to your clipboard. Paste it into your AI of choice to begin designing a custom role!</p>
 
   <div class="button-container">
