@@ -10,9 +10,8 @@
       navigator.clipboard.writeText(prompt)
         .then(function () {
           alert("✅ Prompt copied to clipboard!");
-          // Optional: redirect after 3 seconds
           setTimeout(() => {
-            window.location.href = "https://your-event-site.com"; // <-- Replace with your actual event site URL
+            window.location.href = "https://your-event-website.com"; // Optional
           }, 3000);
         })
         .catch(function (err) {
