@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bedtime Story Prompt Copied</title>
+  <script>
+    window.onload = function () {
+      const prompt = `Role:\n\nYou are a children's story teller expert.\n\nTask:\n\nAsk me a series of questions to create a bespoke bedtime story for my child.\n\nOnce you have asked all the questions you need, generate a short 5-minute bedtime story for me to read to my child.`;
+
+      navigator.clipboard.writeText(prompt)
+        .then(function () {
+          alert("✅ Prompt copied to clipboard!");
+          // Optional: redirect after 3 seconds
+          setTimeout(() => {
+            window.location.href = "https://your-event-site.com"; // <-- Replace with your actual event site URL
+          }, 3000);
+        })
+        .catch(function (err) {
+          alert("❌ Copy failed: " + err);
+        });
+    };
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Copying your bedtime story prompt...</h2>
+  <p>You’ll be redirected shortly.</p>
+</body>
+</html>
