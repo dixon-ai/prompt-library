@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Literacy Prompt Copied</title>
+  <script>
+    window.onload = function () {
+      const prompt = `This entire thread so far has secretly had the purpose of building my AI Literacy through learning-by-doing activities.
+
+1. What Have I Achieved?
+
+List every key Learning Outcome (LO) from this exercise.
+
+Under each LO, give a short explanation of what it means and illustrate how I demonstrated it during the tasks.
+
+2. Why Does AI Literacy Matter?
+
+Show how the skills I’ve gained are transferable—to work, study, creativity, problem-solving and everyday decision-making.
+
+Highlight how these same abilities can inspire and benefit my child.
+
+3. What Should I Do Next?
+
+Recommend practical, bite-sized steps I can take to keep developing my AI skills.
+
+Suggest engaging ways to nurture AI literacy for my child.`;
+
+      navigator.clipboard.writeText(prompt)
+        .then(function () {
+          alert("✅ Prompt copied to clipboard!");
+        })
+        .catch(function (err) {
+          alert("❌ Copy failed: " + err);
+        });
+    };
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .ai-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .ai-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Copying your AI Literacy Reflection Prompt...</h2>
+  <p>The prompt has been copied to your clipboard. Paste it into your AI tool of choice to begin!</p>
+
+  <div class="button-container">
+    <a href="https://claude.ai/" target="_blank" class="ai-button">Open Claude</a>
+    <a href="https://chat.openai.com/" target="_blank" class="ai-button">Open ChatGPT</a>
+    <a href="https://gemini.google.com/" target="_blank" class="ai-button">Open Gemini</a>
+    <a href="https://copilot.microsoft.com/" target="_blank" class="ai-button">Open Copilot</a>
+  </div>
+
+  <div class="button-container">
+    <a href="https://backstage.zoho.eu/backstage/preview/34755000000010339?portalId=20107565057#/exhibitors?lang=en" class="ai-button">🔙 Back to Event Page</a>
+  </div>
+</body>
+</html>
