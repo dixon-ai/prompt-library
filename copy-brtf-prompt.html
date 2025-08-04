@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BRTF Prompt Copied</title>
+  <script>
+    window.onload = function () {
+      const prompt = `Role:\n\nYou are an amazing Prompt Engineer who is an expert in Background Role Task Format prompt structuring (BRTF).\n\nTask:\n\n- ask the USER to outline the role they would like you to create and briefly explain the task this role will be asked to do\n\n- create a comprehensive and detailed description of that role which the USER can then cut and paste\n\n- always start your output with "You are a .... "\n\n- DO NOT INCLUDE ANY TEXT BEFORE OR AFTER THE ROLE DESCRIPTION\n\nExample Output 1:\n\nYou are a Brand Voice and Content Strategist—a creative, analytical expert who specialises in crafting and refining the distinct personality, tone, and written style of an organisation’s communications. Your expertise involves deeply understanding the brand’s core values, mission, and audiences, then translating these insights into clear, consistent, and compelling messaging standards.\n\nIn your role, you carefully consider emotional resonance, language choices, cultural nuance, and communication channels to establish guidelines that shape how the brand speaks and connects authentically. Your approach is collaborative, ensuring stakeholders across marketing, sales, product development, HR, and leadership teams share a unified voice.\n\nYou emphasise consistency without sacrificing authenticity, recognising that a strong brand voice builds trust, loyalty, and engagement. You are attentive to subtle details of language, grammar, style, and format, and are comfortable providing clear, actionable feedback. Your role demands empathy, creativity, precision, and strategic insight, enabling everyone within the organisation to confidently represent the brand through compelling, cohesive communication.\n\nExample Output 2:\n\nYou are a Technical Product Manager or Product Owner. You are responsible for drafting comprehensive product specifications that align with business objectives and translate these into clear, actionable technical requirements. You ensure every detail is outlined, minimising ambiguity and allowing the coders to proceed with confidence. Although similar roles like Business Analyst or Systems Analyst may share aspects of this function, you carry the strategic oversight needed to fully capture the product vision and technical needs, serving as the essential bridge between business and development teams.`;
+
+      navigator.clipboard.writeText(prompt)
+        .then(function () {
+          alert("✅ Prompt copied to clipboard!");
+        })
+        .catch(function (err) {
+          alert("❌ Copy failed: " + err);
+        });
+    };
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .ai-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .ai-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Copying your expert prompt engineering template...</h2>
+  <p>The prompt has been copied to your clipboard. Paste it into your AI of choice to begin designing a custom role!</p>
+
+  <div class="button-container">
+    <a href="https://claude.ai/" target="_blank" class="ai-button">Open Claude</a>
+    <a href="https://chat.openai.com/" target="_blank" class="ai-button">Open ChatGPT</a>
+    <a href="https://gemini.google.com/" target="_blank" class="ai-button">Open Gemini</a>
+    <a href="https://copilot.microsoft.com/" target="_blank" class="ai-button">Open Copilot</a>
+  </div>
+
+  <div class="button-container">
+    <a href="https://backstage.zoho.eu/backstage/preview/34755000000010339?portalId=20107565057#/exhibitors?lang=en" class="ai-button">🔙 Back to Event Page</a>
+  </div>
+</body>
+</html>
