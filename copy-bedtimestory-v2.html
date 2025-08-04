@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bedtime Story Prompt Copied</title>
+  <script>
+    window.onload = function () {
+      const prompt = `Role:\n\nYou are a children's story teller expert.\n\nTask:\n\nAsk me a series of questions to create a bespoke bedtime story for my child.\n\nOnce you have asked all the questions you need, generate a short 5-minute bedtime story for me to read to my child.`;
+
+      navigator.clipboard.writeText(prompt)
+        .then(function () {
+          alert("✅ Prompt copied to clipboard!");
+          setTimeout(() => {
+            window.location.href = "https://backstage.zoho.eu/backstage/preview/34755000000010339?portalId=20107565057#/exhibitors?lang=en";
+          }, 3000);
+        })
+        .catch(function (err) {
+          alert("❌ Copy failed: " + err);
+        });
+    };
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .ai-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .ai-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Copying your bedtime story prompt...</h2>
+  <p>The prompt has been copied to your clipboard. Just open your preferred AI bot, right-click, and select Paste to insert it. Have Fun!</p>
+
+  <div class="button-container">
+    <a href="https://claude.ai/" target="_blank" class="ai-button">Open Claude</a>
+    <a href="https://chat.openai.com/" target="_blank" class="ai-button">Open ChatGPT</a>
+    <a href="https://gemini.google.com/" target="_blank" class="ai-button">Open Gemini</a>
+    <a href="https://copilot.microsoft.com/" target="_blank" class="ai-button">Open Copilot</a>
+  </div>
+</body>
+</html>
